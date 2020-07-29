@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0), rgb(255, 255, 255)), url('https://images.pexels.com/photos/206660/pexels-photo-206660.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-size: cover;
+    background-position: fixed;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+main {
+    transform: translateY(200px);
+    opacity: 0;
+    transition: .5s linear;
+}
+
+main.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100px);
+    background-color: white;
+    opacity: 1;
+}
+
+.search-country {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+select {
+    font-size: 1.1rem;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 25px;
+}
+
+.output {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.output h2 {
+    padding: 10px;
+    font-size: 1.7rem;
+}
+
+#national-flag {
+    width: 200px;
+    margin: 20px;
+}
+
+.output p {
+    text-align: center;
+    line-height: 1.5em;
+    font-size: 1.2rem;
+}
+
+.wiki-viewer {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.wiki-viewer h3 {
+    font-style: italic;
+}
+
+.output .error-msg {
+    width: 300px;
+    font-style: italic;
+    line-height: 1em;
+    margin: 35px;
+}
